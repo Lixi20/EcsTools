@@ -1,0 +1,71 @@
+[main]
+access_key_id=AKIDCF5cFgXxxxxmhPt8A2g6HNHxSlpeFbje
+access_key_secret=lHhfT5VKvHQKxxxxxxQ0PccR2QcgcJm4
+# 资源区域
+region_id=ap-chengdu
+# 实例区域
+zone_id=ap-chengdu-2
+# 系统镜像
+image_id=img-25szkc8t
+# 安全组
+security_group_id=sg-sxxxxx
+# 实例名称
+instance_name=centos_stream_202301023n1
+# 系统主机名
+host_name=geek0218n1
+# 网络计费
+internet_charge_type=TRAFFIC_POSTPAID_BY_HOUR
+# 最大出网带宽，单位为Mbit/s
+internet_max_bandwidth_out=20
+# 实例规格
+instance_type=SA2.MEDIUM2
+# 实例计费
+instance_charge_type=POSTPAID_BY_HOUR
+# 专有网络交换机
+vswitch_id=DEFAULT
+# 私有网络子网ID
+subnet_id=DEFAULT
+# 系统盘大小
+system_disk_size=20
+# 系统盘类型
+system_disk_type=CLOUD_BSSD
+# 密钥对
+key_pair_name=skey-sxxxxx
+# 自动续费R
+auto_renew=false
+# 自动释放时间
+release_time=01:50:00
+# ss服务器默认端口
+default_ss_server_port=15555
+
+[hw]
+# 企业主机安全
+security_service=hss,hss-ent
+
+[tx]
+# 分配公网IP
+public_ip_assigned=True
+# 实例销毁保护标志
+disable_api_termination=False
+# 是否用作公网网关
+as_vpc_gateway=False
+# 开启云安全服务
+security_service=True
+# 开启云监控服
+monitor_service=True
+# 开启云自动化助手服务
+automation_service=True
+# 实例的关闭模式
+stop_type=SOFT
+# 按量计费实例关机收费模式
+stopped_mode=KEEP_CHARGING
+
+[al]
+# 最大入网带宽，单位为Mbit/s
+internet_max_bandwidth_in=50
+# 安全加固
+security_enhancement_strategy=active
+# I/O优化
+io_optimized=optimized
+# 平台标识。如果在WSL中运行，设置为 'wsl' 即可
+platform=
